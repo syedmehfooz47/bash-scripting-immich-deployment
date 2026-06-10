@@ -1,0 +1,57 @@
+# Git ignore file for Immich Docker Deployment package
+
+# Ignore backups and temporary files
+*.backup.*
+*.bak
+*.tmp
+*.swp
+*.swo
+*~
+
+# Ignore environment-specific .env files
+.env.local
+.env.*.local
+
+# Ignore Docker compose override file
+docker-compose.override.yml
+
+# Ignore database backups
+*.sql
+*.sql.gz
+*.dump
+
+# Ignore archive backups
+*.tar.gz
+*.tar.bz2
+*.zip
+
+# Ignore data directories (if cloned into installation path)
+library/
+postgres/
+backups/
+
+# Ignore IDE files
+.vscode/
+.idea/
+*.iml
+.DS_Store
+
+# Ignore logs
+*.log
+logs/
+
+# Ignore node modules (if any)
+node_modules/
+
+# Ignore OS files
+Thumbs.db
+.DS_Store
+
+# Ignore temporary directories
+tmp/
+temp/
+
+# Keep these files tracked
+!config/.env
+!config/docker-compose.yml
+!scripts/
