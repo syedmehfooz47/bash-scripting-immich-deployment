@@ -5,6 +5,7 @@ A minimal Bash script that deploys Immich using the official release files.
 ## Requirements
 - Ubuntu (or any Linux) with Docker and Docker Compose installed.
 - `curl` or `wget` (the script will use whichever is available).
+- Edit `.env` to customise settings such as `UPLOAD_LOCATION`, `DB_PASSWORD`, etc.
 
 ## Quick one‑liner installation
 ```bash
@@ -19,10 +20,19 @@ The script will:
 3. Set a default `DB_PASSWORD=password` (please edit `.env` afterwards).
 4. Start the Immich stack with `docker compose up -d`.
 
+## Preview
+
+<div align="center">
+
+
+<img src="Assets/immich.png" alt="Tomato Menu Page" width="80%" style="border-radius: 8px;" />
+
+
+</div>
+
 ## Post‑deployment
 - Check the containers: `docker compose ps` (or `docker-compose ps`).
 - View logs: `docker compose logs -f`.
-- Edit `.env` to customise settings such as `UPLOAD_LOCATION`, `DB_PASSWORD`, etc.
 
 ## Troubleshooting
 - Ensure Docker is running: `docker ps`.
